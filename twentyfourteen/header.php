@@ -19,6 +19,22 @@
 <html <?php language_attributes(); ?>>
 <!--<![endif]-->
 <head>
+    <link href="http://septillioncn-wordpress.stor.sinaapp.com/meta/Apple-icon.png" rel="apple-touch-icon-precomposed">
+    <link rel="shortcut icon" href="http://septillioncn-wordpress.stor.sinaapp.com/meta/logo.ico" />
+    
+    <!-- Optimized for Windows 8.1 -->
+     <meta name="application-name" content="Septillion's Blog"; />
+     <meta name="msapplication-tooltip" content="Septillions of ideas" />
+     <meta name="msapplication-starturl" content="http://www.septillion.cc" />
+     <meta name="msapplication-window" content="width=1280;height=768" />
+     <meta name="msapplication-navbutton-color" content="#24890d" />
+     <meta name="msapplication-TileColor" content="#000000" />
+     <meta name="msapplication-notification" content="frequency=30;polling-uri=http://septillioncn-wordpress.stor.sinaapp.com/meta/cn.xml; cycle=1"/>
+     <meta name="msapplication-square70x70logo" content="http://septillioncn-wordpress.stor.sinaapp.com/meta/Small.png" />
+     <meta name="msapplication-square150x150logo" content="http://septillioncn-wordpress.stor.sinaapp.com/meta/Mid.png" />
+     <meta name="msapplication-wide310x150logo" content="http://septillioncn-wordpress.stor.sinaapp.com/meta/Wide.png" />
+     <meta name="msapplication-square310x310logo" content="http://septillioncn-wordpress.stor.sinaapp.com/meta/Large.png" />
+     
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width">
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
