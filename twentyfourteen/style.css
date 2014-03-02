@@ -63,9 +63,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
 	border: 0;
-	font-family: inherit;
+	font-family: "Microsoft Yahei", "Helvetica Neue";
 	font-size: 100%;
-	font-style: inherit;
 	font-weight: inherit;
 	margin: 0;
 	outline: 0;
@@ -105,7 +104,7 @@ input,
 select,
 textarea {
 	color: #2b2b2b;
-	font-family: Lato, sans-serif;
+	font-family: "Microsoft Yahei", "Helvetica Neue";
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 1.5;
@@ -213,7 +212,7 @@ tt,
 var,
 samp,
 pre {
-	font-family: monospace, serif;
+	font-family: "Microsoft Yahei", "Helvetica Neue";
 	font-size: 15px;
 	-webkit-hyphens: none;
 	-moz-hyphens:    none;
