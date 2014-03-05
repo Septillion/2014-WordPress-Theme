@@ -29,7 +29,7 @@
      <meta name="msapplication-window" content="width=1280;height=768" />
      <meta name="msapplication-navbutton-color" content="#24890d" />
      <meta name="msapplication-TileColor" content="#000000" />
-     <meta name="msapplication-notification" content="frequency=30;polling-uri=http://septillioncn-wordpress.stor.sinaapp.com/meta/cn.xml; cycle=1"/>
+     <meta name="msapplication-notification" content="frequency=30;polling-uri=http://septillioncn-wordpress.stor.sinaapp.com/meta/cn.xml; cycle=0"/>
      <meta name="msapplication-square70x70logo" content="http://septillioncn-wordpress.stor.sinaapp.com/meta/Small.png" />
      <meta name="msapplication-square150x150logo" content="http://septillioncn-wordpress.stor.sinaapp.com/meta/Mid.png" />
      <meta name="msapplication-wide310x150logo" content="http://septillioncn-wordpress.stor.sinaapp.com/meta/Wide.png" />
