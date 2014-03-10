@@ -18,6 +18,9 @@
 		 */
 		do_action( 'twentyfourteen_featured_posts_before' );
 
+		//Septillion Added
+		do_action( 'twentyfourteen_featured_posts_after' );
+
 		$featured_posts = twentyfourteen_get_featured_posts();
 		foreach ( (array) $featured_posts as $order => $post ) :
 			setup_postdata( $post );
@@ -31,7 +34,7 @@
 		 *
 		 * @since Twenty Fourteen 1.0
 		 */
-		do_action( 'twentyfourteen_featured_posts_after' );
+		//do_action( 'twentyfourteen_featured_posts_after' );
 
 		wp_reset_postdata();
 	?>

@@ -26,12 +26,12 @@ Description: Used to style the TinyMCE editor.
 
 html .mceContentBody {
 	font-size: 100%;
-	max-width: 474px;
+	max-width: 674px;
 }
 
 body {
 	color: #2b2b2b;
-	font-family: Lato, sans-serif;
+	font-family: "Microsoft Yahei", "Helvetica Neue";
 	font-weight: 400;
 	line-height: 1.5;
 	vertical-align: baseline;
