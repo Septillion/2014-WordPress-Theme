@@ -117,7 +117,8 @@
 	}
 
 	// Initialize Featured Content slider.
-	_window.load( function() {
+	//_window.load( function() {
+	$(document).ready( function() {
 		if ( body.is( '.slider' ) ) {
 			$( '.featured-content' ).featuredslider( {
 				selector: '.featured-content-inner > article',
