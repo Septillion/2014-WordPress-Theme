@@ -522,3 +522,21 @@ require get_template_directory() . '/inc/customizer.php';
 if ( ! class_exists( 'Featured_Content' ) && 'plugins.php' !== $GLOBALS['pagenow'] ) {
 	require get_template_directory() . '/inc/featured-content.php';
 }
+//Make the Slider AutoPlay
+function add_script_in_footer(){
+?>
+<script type="text/javascript" charset="utf-8">
+    jQuery(document).ready(function(){
+        var change_every = 5; // The number of seconds that the slider will auto-advance in
+        var current = 1;
+        function auto_advance(){
+            if(current == -1) return false;
+            jQuery('#featured-content .slider-next').eq(current % jQuery('#featured-content .slider-next').length).trigger('click', [true]);
+            current++;
+        };
+        setInterval(function(){auto_advance()}, change_every * 1000);
+    });
+</script>
+<?php
+}
+add_action('wp_footer', 'add_script_in_footer');
