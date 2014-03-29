@@ -2958,7 +2958,15 @@ a.post-thumbnail:hover {
 	width: device-width;
 }
 
-@media screen and (min-width: 200px) {
+@media screen and (max-width:400px){
+	.entry-title{
+		font-size: 16px;
+		font-weight: 700;
+	}
+}
+
+
+@media screen and (min-width: 401px) {
 	a.post-thumbnail:hover img {
 		opacity: 0.85;
 	}

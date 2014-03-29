@@ -30,7 +30,7 @@ get_header(); ?>
 
 		<?php
 			if ( have_posts() ) :
-				query_posts($query_string .'&cat=-29');
+				//query_posts($query_string .'&cat=-29');
 				// Start the Loop.
 				while ( have_posts() ) : the_post();
 
