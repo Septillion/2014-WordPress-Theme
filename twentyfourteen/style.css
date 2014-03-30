@@ -3392,8 +3392,8 @@ a.post-thumbnail:hover {
 
 @media screen and (min-width: 810px) {
 	.attachment .entry-attachment .attachment {
-		margin-right: -168px;
-		margin-left: -168px;
+		margin-right: -68px;
+		margin-left: -68px;
 		max-width: 810px;
 	}
 
@@ -3403,7 +3403,7 @@ a.post-thumbnail:hover {
 	}
 
 	.contributor-avatar {
-		margin-left: -168px;
+		margin-left: -68px;
 	}
 
 	.contributor-summary {
@@ -3421,7 +3421,7 @@ a.post-thumbnail:hover {
 	.full-width .site-content img.size-large.alignleft,
 	.full-width .site-content img.size-medium.alignleft,
 	.full-width .site-content .wp-caption.alignleft {
-		margin-left: -168px;
+		margin-left: -68px;
 	}
 
 	.full-width .site-content .alignleft {
@@ -3433,7 +3433,7 @@ a.post-thumbnail:hover {
 	.full-width .site-content img.size-large.alignright,
 	.full-width .site-content img.size-medium.alignright,
 	.full-width .site-content .wp-caption.alignright {
-		margin-right: -168px;
+		margin-right: -68px;
 	}
 
 	.full-width .site-content .alignright {
