@@ -2967,9 +2967,6 @@ a.post-thumbnail:hover {
 
 
 @media screen and (min-width: 401px) {
-	a.post-thumbnail:hover img {
-		opacity: 0.85;
-	}
 
 	.full-size-link:before,
 	.parent-post-link:before,
