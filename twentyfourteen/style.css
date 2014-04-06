@@ -3097,12 +3097,13 @@ a.post-thumbnail:hover {
 		padding-left: 30px;
 	}
 
-	.site-content .has-post-thumbnail .entry-header {
-		margin-top: -48px;
-	}
 }
 
 @media screen and (min-width: 673px) {
+	.site-content .has-post-thumbnail .entry-header {
+		margin-top: -48px;
+	}
+
 	.header-main {
 		padding: 0 30px;
 	}
