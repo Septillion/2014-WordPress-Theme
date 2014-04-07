@@ -3958,6 +3958,15 @@ a.post-thumbnail:hover {
 	.site-content blockquote.alignright {
 		margin-right: -18%;
 	}
+	p {
+		margin:0 100px 24px;
+	}
+	.site-content .entry-content,
+	.site-content .entry-summary,
+	.page-content {
+		margin: 0 auto;
+		max-width: 874px;
+	}
 }
 
 
