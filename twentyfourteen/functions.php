@@ -33,7 +33,7 @@
  * @since Twenty Fourteen 1.0
  */
 if ( ! isset( $content_width ) ) {
-	$content_width = 674;
+	$content_width = 1748;
 }
 
 /**
