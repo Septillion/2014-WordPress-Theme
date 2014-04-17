@@ -26,12 +26,12 @@ Description: Used to style the TinyMCE editor.
 
 html .mceContentBody {
 	font-size: 100%;
-	max-width: 674px;
+	max-width: 474px;
 }
 
 body {
 	color: #2b2b2b;
-	font-family: "Microsoft Yahei", "Helvetica Neue";
+	font-family: Lato, sans-serif;
 	font-weight: 400;
 	line-height: 1.5;
 	vertical-align: baseline;
@@ -373,7 +373,7 @@ blockquote.alignright p {
 
 img {
 	height: auto;
-	max-width: 874px;
+	max-width: 474px;
 	vertical-align: middle;
 }
 

@@ -37,8 +37,8 @@ function twentyfourteen_custom_header_setup() {
 	 */
 	add_theme_support( 'custom-header', apply_filters( 'twentyfourteen_custom_header_args', array(
 		'default-text-color'     => 'fff',
-		'width'                  => 2520,
-		'height'                 => 480,
+		'width'                  => 1260,
+		'height'                 => 240,
 		'flex-height'            => true,
 		'wp-head-callback'       => 'twentyfourteen_header_style',
 		'admin-head-callback'    => 'twentyfourteen_admin_header_style',
@@ -102,8 +102,8 @@ function twentyfourteen_admin_header_style() {
 	.appearance_page_custom-header #headimg {
 		background-color: #000;
 		border: none;
-		max-width: 2520px;
-		min-height: 96px;
+		max-width: 1260px;
+		min-height: 48px;
 	}
 	#headimg h1 {
 		font-family: Lato, sans-serif;

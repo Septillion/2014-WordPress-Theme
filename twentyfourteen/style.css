@@ -63,8 +63,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
 	border: 0;
-	font-family: "Helvetica","Arial";
+	font-family: inherit;
 	font-size: 100%;
+	font-style: inherit;
 	font-weight: inherit;
 	margin: 0;
 	outline: 0;
@@ -104,7 +105,7 @@ input,
 select,
 textarea {
 	color: #2b2b2b;
-	font-family: "Helvetica","Arial";
+	font-family: Lato, sans-serif;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 1.5;
@@ -212,7 +213,7 @@ tt,
 var,
 samp,
 pre {
-	font-family: "Courier";
+	font-family: monospace, serif;
 	font-size: 15px;
 	-webkit-hyphens: none;
 	-moz-hyphens:    none;
@@ -1023,7 +1024,7 @@ span + .edit-link:before,
 .site-content .entry-meta,
 .page-content {
 	margin: 0 auto;
-	max-width: 674px;
+	max-width: 474px;
 }
 
 .page-content {
@@ -1037,7 +1038,7 @@ span + .edit-link:before,
  */
 
 .post-thumbnail {
-	/*background: #b2b2b2 url(images/pattern-light.svg) repeat fixed;*/
+	background: #b2b2b2 url(images/pattern-light.svg) repeat fixed;
 	display: block;
 	position: relative;
 	width: 100%;
@@ -2718,7 +2719,7 @@ a.post-thumbnail:hover {
  */
 
 .featured-content {
-	/*background: #000 url(images/pattern-dark.svg) repeat fixed;*/
+	background: #000 url(images/pattern-dark.svg) repeat fixed;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing:    border-box;
 	box-sizing:         border-box;
@@ -2958,15 +2959,82 @@ a.post-thumbnail:hover {
 	width: device-width;
 }
 
-@media screen and (max-width:400px){
-	.entry-title{
-		font-size: 16px;
-		font-weight: 700;
+@media screen and (max-width: 400px) {
+	.list-view .site-content .post-thumbnail {
+		background: none;
+		width: auto;
+		z-index: 2;
+	}
+
+	.list-view .site-content .post-thumbnail img {
+		float: left;
+		margin: 0 10px 3px 0;
+		width: 84px;
+	}
+
+	.list-view .site-content .entry-header {
+		background-color: transparent;
+		padding: 0;
+	}
+
+	.list-view .content-area {
+		padding: 0 10px;
+	}
+
+	.list-view .site-content .hentry {
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+		margin: 0;
+		min-height: 60px;
+		padding: 12px 0 9px;
+	}
+
+	.list-view .site-content .cat-links,
+	.list-view .site-content .entry-content,
+	.list-view .site-content .entry-summary,
+	.list-view .site-content footer.entry-meta {
+		display: none;
+	}
+
+	.list-view .site-content .entry-title {
+		clear: none;
+		font-size: 15px;
+		font-weight: 900;
+		line-height: 1.2;
+		margin-bottom: 6px;
+		text-transform: none;
+	}
+
+	.list-view .site-content .format-aside .entry-title,
+	.list-view .site-content .format-link .entry-title,
+	.list-view .site-content .format-quote .entry-title {
+		display: block;
+	}
+
+	.list-view .site-content .entry-meta {
+		background-color: transparent;
+		clear: none;
+		margin: 0;
+		text-transform: none;
+	}
+
+	.archive-header,
+	.page-header {
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+		margin: 24px auto 0;
+		padding-bottom: 24px;
+	}
+
+	.error404 .page-header {
+		border-bottom: 0;
+		margin: 0 auto 24px;
+		padding: 0 10px;
 	}
 }
 
-
 @media screen and (min-width: 401px) {
+	a.post-thumbnail:hover img {
+		opacity: 0.85;
+	}
 
 	.full-size-link:before,
 	.parent-post-link:before,
@@ -3097,13 +3165,12 @@ a.post-thumbnail:hover {
 		padding-left: 30px;
 	}
 
-}
-
-@media screen and (min-width: 673px) {
 	.site-content .has-post-thumbnail .entry-header {
 		margin-top: -48px;
 	}
+}
 
+@media screen and (min-width: 673px) {
 	.header-main {
 		padding: 0 30px;
 	}
@@ -3393,8 +3460,8 @@ a.post-thumbnail:hover {
 
 @media screen and (min-width: 810px) {
 	.attachment .entry-attachment .attachment {
-		margin-right: -68px;
-		margin-left: -68px;
+		margin-right: -168px;
+		margin-left: -168px;
 		max-width: 810px;
 	}
 
@@ -3404,7 +3471,7 @@ a.post-thumbnail:hover {
 	}
 
 	.contributor-avatar {
-		margin-left: -68px;
+		margin-left: -168px;
 	}
 
 	.contributor-summary {
@@ -3422,7 +3489,7 @@ a.post-thumbnail:hover {
 	.full-width .site-content img.size-large.alignleft,
 	.full-width .site-content img.size-medium.alignleft,
 	.full-width .site-content .wp-caption.alignleft {
-		margin-left: -68px;
+		margin-left: -168px;
 	}
 
 	.full-width .site-content .alignleft {
@@ -3434,7 +3501,7 @@ a.post-thumbnail:hover {
 	.full-width .site-content img.size-large.alignright,
 	.full-width .site-content img.size-medium.alignright,
 	.full-width .site-content .wp-caption.alignright {
-		margin-right: -68px;
+		margin-right: -168px;
 	}
 
 	.full-width .site-content .alignright {
@@ -3957,15 +4024,6 @@ a.post-thumbnail:hover {
 
 	.site-content blockquote.alignright {
 		margin-right: -18%;
-	}
-	p {
-		margin:0 100px 24px;
-	}
-	.site-content .entry-content,
-	.site-content .entry-summary,
-	.page-content {
-		margin: 0 auto;
-		max-width: 874px;
 	}
 }
 

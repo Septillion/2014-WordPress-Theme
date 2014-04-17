@@ -18,7 +18,6 @@
 		 */
 		do_action( 'twentyfourteen_featured_posts_before' );
 
-
 		$featured_posts = twentyfourteen_get_featured_posts();
 		foreach ( (array) $featured_posts as $order => $post ) :
 			setup_postdata( $post );
