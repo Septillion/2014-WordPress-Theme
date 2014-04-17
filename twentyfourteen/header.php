@@ -19,8 +19,24 @@
 <html <?php language_attributes(); ?>>
 <!--<![endif]-->
 <head>
+    <link href="http://septillioncn-wordpress.stor.sinaapp.com/meta/Apple-icon.png" rel="apple-touch-icon-precomposed">
+    <link rel="shortcut icon" href="http://septillioncn-wordpress.stor.sinaapp.com/meta/logo.ico" />
+    
+    <!-- Optimized for Windows 8.1 -->
+     <meta name="application-name" content="Septillion's Blog"; />
+     <meta name="msapplication-tooltip" content="Septillions of ideas" />
+     <meta name="msapplication-starturl" content="http://www.septillion.cc" />
+     <meta name="msapplication-window" content="width=1280;height=768" />
+     <meta name="msapplication-navbutton-color" content="#24890d" />
+     <meta name="msapplication-TileColor" content="#000000" />
+     <meta name="msapplication-notification" content="frequency=30;polling-uri=http://septillioncn-wordpress.stor.sinaapp.com/meta/en.xml; cycle=0"/>
+     <meta name="msapplication-square70x70logo" content="http://septillioncn-wordpress.stor.sinaapp.com/meta/Small.png" />
+     <meta name="msapplication-square150x150logo" content="http://septillioncn-wordpress.stor.sinaapp.com/meta/Mid.png" />
+     <meta name="msapplication-wide310x150logo" content="http://septillioncn-wordpress.stor.sinaapp.com/meta/Wide.png" />
+     <meta name="msapplication-square310x310logo" content="http://septillioncn-wordpress.stor.sinaapp.com/meta/Large.png" />
+     
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
@@ -49,7 +65,7 @@
 			</div>
 
 			<nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">
-				<button class="menu-toggle"><?php _e( 'Primary Menu', 'twentyfourteen' ); ?></button>
+				<h1 class="menu-toggle"><?php _e( 'Primary Menu', 'twentyfourteen' ); ?></h1>
 				<a class="screen-reader-text skip-link" href="#content"><?php _e( 'Skip to content', 'twentyfourteen' ); ?></a>
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
 			</nav>

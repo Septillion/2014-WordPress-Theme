@@ -8,7 +8,7 @@ Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: black, green, white, light, dark, two-columns, three-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
-Text Domain: twentyfourteen
+Text Domain: twentyfourteen 
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -63,9 +63,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
 	border: 0;
-	font-family: inherit;
+	font-family: "Helvetica","Arial";
 	font-size: 100%;
-	font-style: inherit;
 	font-weight: inherit;
 	margin: 0;
 	outline: 0;
@@ -105,7 +104,7 @@ input,
 select,
 textarea {
 	color: #2b2b2b;
-	font-family: Lato, sans-serif;
+	font-family: "Helvetica","Arial";
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 1.5;
@@ -213,7 +212,7 @@ tt,
 var,
 samp,
 pre {
-	font-family: monospace, serif;
+	font-family: "Courier";
 	font-size: 15px;
 	-webkit-hyphens: none;
 	-moz-hyphens:    none;
@@ -502,7 +501,7 @@ textarea:focus {
 /* Buttons */
 
 button,
-.button,
+.contributor-posts-link,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
@@ -519,8 +518,7 @@ input[type="submit"] {
 
 button:hover,
 button:focus,
-.button:hover,
-.button:focus,
+.contributor-posts-link:hover,
 input[type="button"]:hover,
 input[type="button"]:focus,
 input[type="reset"]:hover,
@@ -532,7 +530,7 @@ input[type="submit"]:focus {
 }
 
 button:active,
-.button:active,
+.contributor-posts-link:active,
 input[type="button"]:active,
 input[type="reset"]:active,
 input[type="submit"]:active {
@@ -636,7 +634,6 @@ span > object {
 }
 
 blockquote.alignleft,
-figure.wp-caption.alignleft,
 img.alignleft {
 	margin: 7px 24px 7px 0;
 }
@@ -646,7 +643,6 @@ img.alignleft {
 }
 
 blockquote.alignright,
-figure.wp-caption.alignright,
 img.alignright {
 	margin: 7px 0 7px 24px;
 }
@@ -696,16 +692,7 @@ img.aligncenter,
 	font-style: italic;
 	line-height: 1.5;
 	margin: 9px 0;
-}
-
-div.wp-caption .wp-caption-text {
 	padding-right: 10px;
-}
-
-div.wp-caption.alignright img[class*="wp-image-"],
-div.wp-caption.alignright .wp-caption-text {
-	padding-left: 10px;
-	padding-right: 0;
 }
 
 .wp-smiley {
@@ -753,8 +740,6 @@ div.wp-caption.alignright .wp-caption-text {
 .footer-sidebar:after,
 .hentry:before,
 .hentry:after,
-.gallery:before,
-.gallery:after,
 .slider-direction-nav:before,
 .slider-direction-nav:after,
 .contributor-info:before,
@@ -771,7 +756,6 @@ div.wp-caption.alignright .wp-caption-text {
 
 .footer-sidebar:after,
 .hentry:after,
-.gallery:after,
 .slider-direction-nav:after,
 .contributor-info:after,
 .search-box:after,
@@ -834,7 +818,7 @@ span + .edit-link:before,
  */
 
 /* Ensure that there is no gap between the header and
-	 the admin bar for WordPress versions before 3.8. */
+   the admin bar for WordPress versions before 3.8. */
 #wpadminbar {
 	min-height: 32px;
 }
@@ -1000,14 +984,11 @@ span + .edit-link:before,
 }
 
 .menu-toggle {
-	background-color: #000;
-	border-radius: 0;
 	cursor: pointer;
 	font-size: 0;
 	height: 48px;
 	margin: 0;
 	overflow: hidden;
-	padding: 0;
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -1018,18 +999,7 @@ span + .edit-link:before,
 .menu-toggle:before {
 	color: #fff;
 	content: "\f419";
-	display: inline;
 	margin-top: 16px;
-}
-
-.menu-toggle:active,
-.menu-toggle:focus,
-.menu-toggle:hover {
-	background-color: #444;
-}
-
-.menu-toggle:focus {
-	outline: 1px dotted;
 }
 
 
@@ -1053,7 +1023,7 @@ span + .edit-link:before,
 .site-content .entry-meta,
 .page-content {
 	margin: 0 auto;
-	max-width: 474px;
+	max-width: 674px;
 }
 
 .page-content {
@@ -1067,7 +1037,7 @@ span + .edit-link:before,
  */
 
 .post-thumbnail {
-	background: #b2b2b2 url(images/pattern-light.svg) repeat fixed;
+	/*background: #b2b2b2 url(images/pattern-light.svg) repeat fixed;*/
 	display: block;
 	position: relative;
 	width: 100%;
@@ -1285,11 +1255,7 @@ a.post-thumbnail:hover {
 .entry-content a:hover,
 .entry-summary a:hover,
 .page-content a:hover,
-.comment-content a:hover,
-.entry-content a.button,
-.entry-summary a.button,
-.page-content a.button,
-.comment-content a.button {
+.comment-content a:hover {
 	text-decoration: none;
 }
 
@@ -1352,7 +1318,7 @@ a.post-thumbnail:hover {
 
 .hentry .mejs-controls .mejs-time-rail .mejs-time-total,
 .hentry .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total {
-	background: rgba(255, 255, 255, .33);
+	background: rgba(255,255,255,.33);
 }
 
 .hentry .mejs-container .mejs-controls .mejs-time {
@@ -1490,13 +1456,6 @@ a.post-thumbnail:hover {
 .gallery-columns-8 .gallery-item:nth-of-type(8n),
 .gallery-columns-9 .gallery-item:nth-of-type(9n) {
 	margin-right: 0;
-}
-
-.gallery-columns-1.gallery-size-medium figure.gallery-item:nth-of-type(1n+1),
-.gallery-columns-1.gallery-size-thumbnail figure.gallery-item:nth-of-type(1n+1),
-.gallery-columns-2.gallery-size-thumbnail figure.gallery-item:nth-of-type(2n+1),
-.gallery-columns-3.gallery-size-thumbnail figure.gallery-item:nth-of-type(3n+1) {
-	clear: left;
 }
 
 .gallery-caption {
@@ -2263,7 +2222,6 @@ a.post-thumbnail:hover {
 }
 
 .widget button,
-.widget .button,
 .widget input[type="button"],
 .widget input[type="reset"],
 .widget input[type="submit"] {
@@ -2760,7 +2718,7 @@ a.post-thumbnail:hover {
  */
 
 .featured-content {
-	background: #000 url(images/pattern-dark.svg) repeat fixed;
+	/*background: #000 url(images/pattern-dark.svg) repeat fixed;*/
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing:    border-box;
 	box-sizing:         border-box;
@@ -3000,84 +2958,15 @@ a.post-thumbnail:hover {
 	width: device-width;
 }
 
-@media screen and (max-width: 400px) {
-	.list-view .site-content .post-thumbnail {
-		background: none;
-		width: auto;
-		z-index: 2;
-	}
-
-	.list-view .site-content .post-thumbnail img {
-		float: left;
-		margin: 0 10px 3px 0;
-		width: 84px;
-	}
-
-	.list-view .site-content .entry-header {
-		background-color: transparent;
-		padding: 0;
-	}
-
-	.list-view .content-area {
-		padding: 0 10px;
-	}
-
-	.list-view .site-content .hentry {
-		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-		margin: 0;
-		min-height: 60px;
-		padding: 12px 0 9px;
-	}
-
-	.list-view .site-content .cat-links,
-	.list-view .site-content .type-post .entry-content,
-	.list-view .site-content .type-page .entry-content,
-	.list-view .site-content .type-post .entry-summary,
-	.list-view .site-content .type-page .entry-summary,
-	.list-view .site-content footer.entry-meta {
-		display: none;
-	}
-
-	.list-view .site-content .entry-title {
-		clear: none;
-		font-size: 15px;
-		font-weight: 900;
-		line-height: 1.2;
-		margin-bottom: 6px;
-		text-transform: none;
-	}
-
-	.list-view .site-content .format-aside .entry-title,
-	.list-view .site-content .format-link .entry-title,
-	.list-view .site-content .format-quote .entry-title {
-		display: block;
-	}
-
-	.list-view .site-content .entry-meta {
-		background-color: transparent;
-		clear: none;
-		margin: 0;
-		text-transform: none;
-	}
-
-	.archive-header,
-	.page-header {
-		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-		margin: 24px auto 0;
-		padding-bottom: 24px;
-	}
-
-	.error404 .page-header {
-		border-bottom: 0;
-		margin: 0 auto 24px;
-		padding: 0 10px;
+@media screen and (max-width:400px){
+	.entry-title{
+		font-size: 16px;
+		font-weight: 700;
 	}
 }
 
+
 @media screen and (min-width: 401px) {
-	a.post-thumbnail:hover img {
-		opacity: 0.85;
-	}
 
 	.full-size-link:before,
 	.parent-post-link:before,
@@ -3208,12 +3097,13 @@ a.post-thumbnail:hover {
 		padding-left: 30px;
 	}
 
-	.site-content .has-post-thumbnail .entry-header {
-		margin-top: -48px;
-	}
 }
 
 @media screen and (min-width: 673px) {
+	.site-content .has-post-thumbnail .entry-header {
+		margin-top: -48px;
+	}
+
 	.header-main {
 		padding: 0 30px;
 	}
@@ -3261,8 +3151,7 @@ a.post-thumbnail:hover {
 	}
 
 	.full-width .site-content .has-post-thumbnail .entry-header,
-	.full-width.singular .site-content .hentry.has-post-thumbnail,
-	.full-width.home .site-content .hentry.has-post-thumbnail {
+	.full-width.singular .site-content .hentry.has-post-thumbnail {
 		margin-top: -48px;
 	}
 
@@ -3276,7 +3165,6 @@ a.post-thumbnail:hover {
 		float: right;
 		margin-left: -33.33333333%;
 		padding: 48px 30px 24px;
-		position: relative;
 		width: 33.33333333%;
 	}
 
@@ -3505,8 +3393,8 @@ a.post-thumbnail:hover {
 
 @media screen and (min-width: 810px) {
 	.attachment .entry-attachment .attachment {
-		margin-right: -168px;
-		margin-left: -168px;
+		margin-right: -68px;
+		margin-left: -68px;
 		max-width: 810px;
 	}
 
@@ -3516,7 +3404,7 @@ a.post-thumbnail:hover {
 	}
 
 	.contributor-avatar {
-		margin-left: -168px;
+		margin-left: -68px;
 	}
 
 	.contributor-summary {
@@ -3534,7 +3422,7 @@ a.post-thumbnail:hover {
 	.full-width .site-content img.size-large.alignleft,
 	.full-width .site-content img.size-medium.alignleft,
 	.full-width .site-content .wp-caption.alignleft {
-		margin-left: -168px;
+		margin-left: -68px;
 	}
 
 	.full-width .site-content .alignleft {
@@ -3546,7 +3434,7 @@ a.post-thumbnail:hover {
 	.full-width .site-content img.size-large.alignright,
 	.full-width .site-content img.size-medium.alignright,
 	.full-width .site-content .wp-caption.alignright {
-		margin-right: -168px;
+		margin-right: -68px;
 	}
 
 	.full-width .site-content .alignright {
@@ -3589,8 +3477,7 @@ a.post-thumbnail:hover {
 		margin-left: 20px;
 	}
 
-	.full-width.singular .site-content .hentry.has-post-thumbnail,
-	.full-width.home .site-content .hentry.has-post-thumbnail {
+	.full-width.singular .site-content .hentry.has-post-thumbnail {
 		margin-top: -72px;
 	}
 
@@ -4070,6 +3957,15 @@ a.post-thumbnail:hover {
 
 	.site-content blockquote.alignright {
 		margin-right: -18%;
+	}
+	p {
+		margin:0 100px 24px;
+	}
+	.site-content .entry-content,
+	.site-content .entry-summary,
+	.page-content {
+		margin: 0 auto;
+		max-width: 874px;
 	}
 }
 
